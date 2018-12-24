@@ -1,0 +1,28 @@
+{
+  "presets": [
+    "@babel/env",
+    "@babel/flow"
+  ],
+  "plugins": [
+    "@babel/plugin-proposal-optional-chaining"
+  ],
+
+
+  "env": {
+    "commonjs": {
+      "presets": [
+        ["@babel/env", {
+          "useBuiltIns": false
+        }]
+      ]
+    },
+    "es": {
+      "presets": [
+        ["@babel/env", {
+          "useBuiltIns": false,
+          "modules": false
+        }]
+      ]
+    }
+  }
+}
