@@ -1,7 +1,7 @@
 {
   "name": "@soulofmischief/ast-ast",
   "description": "A tiny module for evaluating basic Babel Abstract Syntax",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "author": {
     "name": "soulofmischief",
     "email": "soulofmischief@protonmail.com",
@@ -27,7 +27,6 @@
     "build:umd": "BABEL_ENV=es NODE_ENV=development npx rollup src/index.js --config --sourcemap --file dist/ast-ast.js",
     "build:umd:min": "BABEL_ENV=es NODE_ENV=production npx rollup src/index.js --config --file dist/ast-ast.min.js",
     "clean": "npx rimraf es dist lib",
-    "lint:eslint": "npx eslint server/. test/. --config config/.eslintrc.yaml",
     "lint:flow": "npx flow status",
     "lint:flow:stop": "npx flow stop",
     "prepublish": "npm run build"
