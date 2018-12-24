@@ -12,14 +12,14 @@
     "commonjs": {
       "presets": [
         ["@babel/env", {
-          "useBuiltIns": false
+          "useBuiltIns": "usage"
         }]
       ]
     },
     "es": {
       "presets": [
         ["@babel/env", {
-          "useBuiltIns": false,
+          "useBuiltIns": "usage",
           "modules": false
         }]
       ]
